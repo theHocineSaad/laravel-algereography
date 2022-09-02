@@ -11,7 +11,7 @@ class Wilaya extends Model
     public $incrementing = false;
 
     protected $fillable = [
-        'id',
+        // 'id', you never need to insert an Id to a table (auto-increment)
         'name',
         'ar_name',
     ];
