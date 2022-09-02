@@ -17,7 +17,7 @@
     php artisan algereography:install
 
 This command will do those good stuff for you:
-1. Publish two Models, **`Wilayas`** and **`Dairas`** to **`app/Models`**.
+1. Publish two Models, **`Wilaya`** and **`Daira`** to **`app/Models`**.
 
 2. Publish two Migrations, **`create_wilayas_table`** and **`create_dairas_table`** to **`database/migrations`**
 
