@@ -1,0 +1,55 @@
+{
+    "name": "thehocinesaad/laravel-algereography",
+    "description": "Easily add all the 58 Algerian Wilayas and its Dairas to your cool Laravel project (Migrations, Seeders and Models).",
+    "keywords": [
+        "thehocinesaad",
+        "laravel-algereography",
+        "Wilayas",
+        "Dairas",
+        "Provinces of Algeria",
+        "Districts of Algeria",
+        "Administrative Divisions of Algeria"
+    ],
+    "homepage": "https://github.com/thehocinesaad/laravel-algereography",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Hocine Saad",
+            "email": "theHocineSaad@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheHocineSaad\\LaravelAlgereography\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheHocineSaad\\LaravelAlgereography\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheHocineSaad\\LaravelAlgereography\\LaravelAlgereographyServiceProvider"
+            ]
+        }
+    }
+}
