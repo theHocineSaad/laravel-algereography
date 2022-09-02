@@ -3,10 +3,10 @@
 
 **Laravel-Algereography** allows you to add Migrations, Seeders and Models of Algerian Wilayas and Dairas to your existing or new cool Laravel project .
 
-**- 58 Wilayas.**
-**- 548 Dairas.**
-**- Support both Arabic and French languages**
-**- Built in models relationships, so you can for example do: `Daira::find(1)->wilaya` to get the Wilaya of Daira with the id=1.** 
+**- 58 Wilayas.**  
+**- 548 Dairas.**  
+**- Support both Arabic and French languages**  
+**- Built in models relationships, so you can for example do: `Daira::find(1)->wilaya` to get the Wilaya of Daira with the id=1.**   
 
 
 ## Installation
@@ -31,7 +31,7 @@ This command will do those good stuff for you:
 5. Finally, it prints **Done!** to make you know that everything is succefully finished then it will print **1 2 3 Viva l'Algérie!** just to make you a little bit proud of your country :heart:
 
 #### Step 3:
-There is no step 3, you're done :wink:
+There is no step 3, you're done :wink:  
 Check out your database and you will find two new tables, **`wilayas`** and **`dairas`**.
 
 ## Contributing
