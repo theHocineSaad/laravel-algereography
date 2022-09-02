@@ -38,4 +38,4 @@ Check out your database and you will find two new tables, **`wilayas`** and **`d
 Thank you for considering contributing to Laravel-Algereography project! Feel free to contribute in any way, we welcome every contribution.
 
 ## License
-Laravel-Algereography project is open-sourced software licensed under the MIT license.
+Laravel-Algereography project is open-sourced software licensed under the [MIT license](https://github.com/theHocineSaad/laravel-algereography/blob/main/LICENSE.md "MIT license").
