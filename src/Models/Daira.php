@@ -11,7 +11,8 @@ class Daira extends Model
     public $incrementing = false;
 
     protected $fillable = [
-        'id',
+        
+        //'id',Ids auto increment you never need to insert them
         'name',
         'ar_name',
         'wilaya_id',
