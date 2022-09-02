@@ -303,6 +303,9 @@ class WilayaSeeder extends Seeder
     public function run()
     {
         array_walk($this->wilayas, function ($wilaya) {
+            // create is a bit slow using insert is better it also means
+            //you dont need to use $fillable at all, no mass assignement will be applied
+
             Wilaya::create($wilaya);
         });
     }
