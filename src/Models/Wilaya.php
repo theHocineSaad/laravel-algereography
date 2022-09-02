@@ -13,7 +13,7 @@ class Wilaya extends Model
     protected $fillable = [
         'id',
         'name',
-        'arName',
+        'ar_name',
     ];
 
     public function dairas()

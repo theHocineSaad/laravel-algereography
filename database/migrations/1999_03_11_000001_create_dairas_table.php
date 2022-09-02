@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('dairas', function (Blueprint $table) {
             $table->smallInteger('id')->primary();
             $table->tinyText('name');
-            $table->tinyText('arName');
+            $table->tinyText('ar_name');
 
             $table->tinyInteger('wilaya_id');
             $table->foreign('wilaya_id')->references('id')->on('wilayas');

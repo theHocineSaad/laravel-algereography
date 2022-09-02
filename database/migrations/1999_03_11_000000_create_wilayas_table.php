@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('wilayas', function (Blueprint $table) {
             $table->tinyInteger('id')->primary();
             $table->tinyText('name');
-            $table->tinyText('arName');
+            $table->tinyText('ar_name');
         });
     }
 

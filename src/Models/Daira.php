@@ -13,7 +13,7 @@ class Daira extends Model
     protected $fillable = [
         'id',
         'name',
-        'arName',
+        'ar_name',
         'wilaya_id',
     ];
 
