@@ -5,7 +5,7 @@
 
 **- 58 Wilayas.**  
 **- 548 Dairas.**  
-**- Support both Arabic and French languages**  
+**- Support both Arabic and French languages.**  
 **- Built in models relationships, so you can for example do: `Daira::find(1)->wilaya` to get the Wilaya of Daira with the id=1.**   
 
 
@@ -23,7 +23,7 @@ This command will do those good stuff for you:
 
 3. Publish two Seeders, **`WilayaSeeder`** and **`DairaSeeder`** to **`database/seeders`**
 
-3. Run the two Migrations (**`create_wilayas_table`** and **`create_dairas_table`**)
+3. Run the two Migrations (**`create_wilayas_table`** and **`create_dairas_table`**)  
 **Note:** this operation will automatically overwrite any table with the name of **`wilayas`** and **`dairas`**
 
 4. Run the two Seeders (**`WilayaSeeder`** and **`DairaSeeder`**)
