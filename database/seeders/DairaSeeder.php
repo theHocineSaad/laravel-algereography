@@ -3300,8 +3300,6 @@ class DairaSeeder extends Seeder
 
     public function run()
     {
-        array_walk($this->dairas, function ($daira) {
-            Daira::create($daira);
-        });
+        Daira::insert($this->dairas);
     }
 }
