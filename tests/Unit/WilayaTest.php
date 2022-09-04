@@ -28,4 +28,34 @@ class WilayaTest extends TestCase
         $wilaya = Wilaya::find(1);
         $this->assertInstanceOf('Illuminate\Database\Eloquent\Collection', $wilaya->dairas);
     }
+
+    public function test_if_wilayas_helper_without_params_is_working_properly()
+    {
+        $this->assertEquals(['id', 'name', 'ar_name'], array_keys(wilayas()[0]->toArray()));
+    }
+
+    public function test_if_wilayas_helper_with_lang_param_is_working_properly()
+    {
+        $this->assertEquals('تيزي وزو', wilayas('ar')[14]->name);
+    }
+
+    public function test_if_wilaya_helper_without_lang_param_is_working_properly()
+    {
+        $this->assertEquals(['id', 'name', 'ar_name'], array_keys(wilaya(15)->toArray()));
+    }
+
+    public function test_if_wilaya_helper_with_lang_param_is_working_properly()
+    {
+        $this->assertEquals('تيزي وزو', wilaya(15, 'ar')->name);
+    }
+
+    public function test_if_dairas_helper_without_params_is_working_properly()
+    {
+        $this->assertEquals(['id', 'name', 'ar_name', 'wilaya_id'], array_keys(dairas()[0]->toArray()));
+    }
+
+    public function test_if_dairas_helper_with_lang_param_is_working_properly()
+    {
+        $this->assertEquals('تيزي وزو', dairas('ar')[205]->name);
+    }
 }
