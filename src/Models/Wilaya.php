@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace TheHocineSaad\LaravelAlgereography\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Wilaya;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class WilayaSeeder extends Seeder
 {
