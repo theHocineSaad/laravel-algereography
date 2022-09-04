@@ -302,6 +302,6 @@ class WilayaSeeder extends Seeder
 
     public function run()
     {
-        Wilaya::insert($this->wilayas);
+        DB::table('wilayas')->insert($this->wilayas);
     }
 }

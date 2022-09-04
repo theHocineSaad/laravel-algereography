@@ -3300,6 +3300,6 @@ class DairaSeeder extends Seeder
 
     public function run()
     {
-        Daira::insert($this->dairas);
+        DB::table('dairas')->insert($this->dairas);
     }
 }
