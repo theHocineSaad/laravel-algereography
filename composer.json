@@ -33,7 +33,10 @@
             "TheHocineSaad\\LaravelAlgereography\\": "src",
             "Database\\Migrations\\": "database/migrations/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
