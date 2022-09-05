@@ -14,22 +14,15 @@ use TheHocineSaad\LaravelAlgereography\Models\Wilaya;
 *ex: wilayas(), wilayas('ar'), wilayas('fr').
 |
 */
+
 if (! function_exists('wilayas')) {
     function wilayas(string $lang = ''): Illuminate\Database\Eloquent\Collection
     {
-        switch ($lang) {
-            case 'ar':
-                return Wilaya::select('id', 'ar_name as name')->get();
-                break;
-
-            case 'fr':
-                return Wilaya::select('id', 'name')->get();
-                break;
-
-            default:
-                return Wilaya::all();
-                break;
-        }
+        return match ($lang) {
+            'ar' => Wilaya::select('id', 'ar_name as name')->get(),
+            'fr' => Wilaya::select('id', 'name')->get(),
+            default => Wilaya::all(),
+        };
     }
 }
 
@@ -47,19 +40,11 @@ if (! function_exists('wilayas')) {
 if (! function_exists('wilaya')) {
     function wilaya(int $wilaya_id, string $lang = ''): TheHocineSaad\LaravelAlgereography\Models\Wilaya
     {
-        switch ($lang) {
-            case 'ar':
-                return Wilaya::findOrFail($wilaya_id, ['id', 'ar_name as name']);
-                break;
-
-            case 'fr':
-                return Wilaya::findOrFail($wilaya_id, ['id', 'name']);
-                break;
-
-            default:
-                return Wilaya::findOrFail($wilaya_id);
-                break;
-        }
+        return match ($lang) {
+            'ar' => Wilaya::findOrFail($wilaya_id, ['id', 'ar_name as name']),
+            'fr' => Wilaya::findOrFail($wilaya_id, ['id', 'name']),
+            default => Wilaya::findOrFail($wilaya_id),
+        };
     }
 }
 
@@ -77,19 +62,11 @@ if (! function_exists('wilaya')) {
 if (! function_exists('dairas')) {
     function dairas(string $lang = ''): Illuminate\Database\Eloquent\Collection
     {
-        switch ($lang) {
-            case 'ar':
-                return Daira::select('id', 'ar_name as name', 'wilaya_id')->get();
-                break;
-
-            case 'fr':
-                return Daira::select('id', 'name', 'wilaya_id')->get();
-                break;
-
-            default:
-                return Daira::all();
-                break;
-        }
+        return match ($lang) {
+            'ar' => Daira::select('id', 'ar_name as name', 'wilaya_id')->get(),
+            'fr' => Daira::select('id', 'name', 'wilaya_id')->get(),
+            default => Daira::all(),
+        };
     }
 }
 
@@ -107,18 +84,10 @@ if (! function_exists('dairas')) {
 if (! function_exists('dairasOf')) {
     function dairasOf(int $wilaya_id, string $lang = ''): Illuminate\Database\Eloquent\Collection
     {
-        switch ($lang) {
-            case 'ar':
-                return Daira::select('id', 'ar_name as name')->where('wilaya_id', $wilaya_id)->get();
-                break;
-
-            case 'fr':
-                return Daira::select('id', 'name')->where('wilaya_id', $wilaya_id)->get();
-                break;
-
-            default:
-                return Daira::where('wilaya_id', $wilaya_id)->get();
-                break;
-        }
+        return match ($lang) {
+            'ar' => Daira::select('id', 'ar_name as name')->where('wilaya_id', $wilaya_id)->get(),
+            'fr' => Daira::select('id', 'name')->where('wilaya_id', $wilaya_id)->get(),
+            default => Daira::where('wilaya_id', $wilaya_id)->get(),
+        };
     }
 }
