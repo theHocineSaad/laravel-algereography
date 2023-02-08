@@ -100,12 +100,12 @@ class WilayaSeeder extends Seeder
         ],
         [
             'id' => '19',
-            'name' => 'Se9tif',
+            'name' => 'Setif',
             'ar_name' => 'سطيف',
         ],
         [
             'id' => '20',
-            'name' => 'Saefda',
+            'name' => 'Saeda',
             'ar_name' => 'سعيدة',
         ],
         [
